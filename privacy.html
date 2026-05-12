@@ -29,20 +29,22 @@ devices. ChatWatch does not operate any servers or store your data in the cloud.
 <ul>
   <li>The channels you have connected to (slug, chatroom/video ID, platform).</li>
   <li>The viewer username you provided (used to highlight your own callouts in chat).</li>
-  <li>Your app preferences (e.g. haptic settings, font size, analytics opt-in, subscription state).</li>
+  <li>Your app preferences (e.g. haptic settings, font size, crash-report opt-out, subscription state).</li>
 </ul>
 <p>None of this data is transmitted to ChatWatch or any third party.</p>
 
-<h2>Crash reports &amp; usage data (optional)</h2>
-<p>If you choose to <strong>opt in</strong>, ChatWatch sends anonymous crash reports and basic
-usage statistics to <a href="https://sentry.io">Sentry</a>. This includes:</p>
+<h2>Crash reports</h2>
+<p>By default, ChatWatch sends <strong>anonymous</strong> crash reports to
+<a href="https://sentry.io">Sentry</a> so we can find and fix bugs that affect real users.
+The data is limited to:</p>
 <ul>
   <li>Stack traces when the app crashes.</li>
   <li>Connection success / failure events (no channel names).</li>
   <li>Device model, OS version, and app version.</li>
 </ul>
-<p>No personally identifiable information (PII) is sent. You can opt out at any time in the
-app settings — no data will be sent after opting out.</p>
+<p>No personally identifiable information (PII) is collected or sent. You can
+<strong>opt out at any time</strong> in the app's settings sheet ("Share crash reports"
+toggle). Once disabled, no further data is sent from either the phone or the paired watch.</p>
 
 <h2>Third-party services</h2>
 <ul>
@@ -52,7 +54,7 @@ app settings — no data will be sent after opting out.</p>
       governed by <a href="https://www.twitch.tv/p/legal/terms-of-service/">Twitch's Terms of Service</a>.</li>
   <li><strong>YouTube Live</strong> — ChatWatch reads YouTube's public live-chat data. Your use of YouTube is
       governed by <a href="https://www.youtube.com/static?template=terms">YouTube's Terms of Service</a>.</li>
-  <li><strong>Sentry</strong> (opt-in only) — crash and error reporting.
+  <li><strong>Sentry</strong> — anonymous crash and error reporting (on by default, user can opt out).
       See <a href="https://sentry.io/privacy/">Sentry's Privacy Policy</a>.</li>
   <li><strong>Google Play Billing</strong> — handles the subscription and free trial. See
       <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
